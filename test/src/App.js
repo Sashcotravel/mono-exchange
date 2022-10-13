@@ -26,10 +26,6 @@ const App = () => {
         dispatch(axiosCurrent())
     }, [])
 
-    const change10 = (e) => {
-        setInput1(e.target.value)
-    }
-
     const change = (e) => {
         setValue1(e.target.value)
         setTagMoney1(e.target.options[e.target.selectedIndex].dataset.attribute)
@@ -43,6 +39,10 @@ const App = () => {
     const change2 = (e) => {
         setValue2(e.target.value)
         setTagMoney2(e.target.options[e.target.selectedIndex].dataset.attribute)
+    }
+
+    const change10 = (e) => {
+        setInput1(e.target.value)
     }
 
     // input1 - first input
